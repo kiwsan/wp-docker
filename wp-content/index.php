@@ -1,2 +1,2 @@
 <?php
-// index
+// Silence is golden.

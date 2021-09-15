@@ -1,1 +1,20 @@
+# Application
+!wp-content/mu-plugins/*
+wp-content/plugins/*
+wp-content/upgrade
+wp-content/uploads/*
+
+# Dotenv
 .env
+!.env.example
+
+# Node Package Manager
+node_modules
+
+# Theme
+.DS_Store
+.sass-cache/*
+
+# Preinstalled Themes
+wp-content/themes/
+wp-content/languages/

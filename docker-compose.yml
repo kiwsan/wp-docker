@@ -1,19 +1,19 @@
-version: "3.9"
+version: "3"
 
 services:
   db:
     platform: linux/x86_64
-    image: mysql:5.7
+    image: mariadb
     volumes:
       - db_data:/var/lib/mysql
     ports:
       - "3306:3306"
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${DB_NAME}
+      MARIADB_USER: ${DB_USER}
+      MARIADB_PASSWORD: ${DB_PASSWORD}
 
   wordpress:
     depends_on:
